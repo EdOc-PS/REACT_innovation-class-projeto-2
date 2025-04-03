@@ -1,0 +1,16 @@
+:root {
+  --background: #000000
+}
+
+
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  padding: 0;
+  color: white;
+}
+
+
+
