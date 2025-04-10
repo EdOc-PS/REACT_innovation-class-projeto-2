@@ -1,0 +1,24 @@
+.container_found {
+    background-color: var(--gray);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 90%;
+    text-align: center;
+
+
+    p {
+        color: var(--red);
+        font-size: 18px;
+
+    }
+
+}
+
+@media screen and (width > 920px) {
+    .container_found {
+        width: 50%;
+        p {
+            font-size: 22px;
+        }
+    }
+}
