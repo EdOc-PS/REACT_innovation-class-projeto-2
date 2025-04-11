@@ -1,14 +1,11 @@
-export const GET = () => {
-    return fetch(`https://api.github.com/users`, {
+export const GET = (perfil) => {
+    return fetch(`https://api.github.com/users/${perfil}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
       },
     })
       .then((response) => {
-        if (!response.ok) {
-          throw new Error(`Erro: ${response.statusText}`);
-        }
         return response.json();
       })
       .catch((error) => {
