@@ -23,6 +23,7 @@
 
   .container_search, .container_response {
     width: 100%;
+    display: grid;
     place-items: center;
   }
 }
