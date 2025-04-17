@@ -3,6 +3,7 @@ import { useState } from "react";
 import NotFound from "./components/not-found/notfound";
 import Perfil from "./components/perfil-card/perfil";
 import Search from "./components/search-bar/searchbar";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 export default function App() {
   const [perfilData, setPerfilData] = useState(null);
@@ -23,7 +24,11 @@ export default function App() {
           </div>
           <div className="container_response">
           {loading ? (
-              <img src="/public/loading.gif" alt="" />
+              <DotLottieReact className="icon_animated"
+              src="https://lottie.host/4c0499e7-95aa-4eb1-904e-d9ccff0482f0/7NweWIdu8v.lottie"
+              loop
+              autoplay
+            />
             ) : notFound ? (
               <NotFound />
             ) : perfilData ? (

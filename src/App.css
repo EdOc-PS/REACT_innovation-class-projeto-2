@@ -25,6 +25,10 @@
     }
   }
 
+  .icon_animated{
+    width: 100px;
+  }
+
   .container_search, .container_response {
     width: 100%;
     display: grid;
