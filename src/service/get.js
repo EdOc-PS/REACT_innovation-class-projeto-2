@@ -6,6 +6,7 @@ export const GET = async (perfil) => {
         "Content-Type": "application/json",
       },
     });
+    
     return await response.json();
   } catch (error) {
     console.error("Erro na requisição:", error);

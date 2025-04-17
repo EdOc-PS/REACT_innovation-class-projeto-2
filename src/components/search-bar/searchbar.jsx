@@ -7,10 +7,10 @@ export default function Search({ setPerfilData, setNotFound, setLoading }) {
 
   const handleSearch = async () => {
     setLoading(true);
+    setPerfilData(null);
     try {
       const result = await GET(perfil);
       if (result.message === "Not Found") {
-        console.error("Erro na busca do perfil:", result.message);
         setNotFound(true);
       } else {
         setPerfilData(result);
