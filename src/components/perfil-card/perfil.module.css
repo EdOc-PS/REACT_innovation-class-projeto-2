@@ -54,3 +54,13 @@
 
     }
 }
+
+@media screen and (height < 768px) {
+    .container_perfil {
+        img {
+            width: 8rem;
+            height: 8rem;
+        }
+        
+    }
+}
